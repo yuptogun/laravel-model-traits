@@ -7,7 +7,7 @@ I've helped myself with these code snippets. Hope someone else would be helped t
 ### Activation
 
 ```php
-class Membership extends \Illuminate\Datablase\Eloquent\Model, \Yuptogun\LaravelModel\Interfaces\ActivatableModel
+class Membership extends \Illuminate\Database\Eloquent\Model, \Yuptogun\LaravelModel\Interfaces\ActivatableModel
 {
     use \Yuptogun\LaravelModel\Traits\HasActivationAttributes;
 
@@ -29,7 +29,7 @@ if (!$user->membership->is_active) {
 ### Rotating values
 
 ```php
-class User extends \Illuminate\Datablase\Eloquent\Model, \Yuptogun\LaravelModel\Interfaces\ValueRotatingModel
+class User extends \Illuminate\Database\Eloquent\Model, \Yuptogun\LaravelModel\Interfaces\ValueRotatingModel
 {
     use \Yuptogun\LaravelModel\Traits\HasRotatingAttributes;
 
@@ -49,7 +49,7 @@ if ($user->switchField('hidden')) {
 ### Sortable
 
 ```php
-class Episode extends \Illuminate\Datablase\Eloquent\Model, \Yuptogun\LaravelModel\Interfaces\SortableModel
+class Episode extends \Illuminate\Database\Eloquent\Model, \Yuptogun\LaravelModel\Interfaces\SortableModel
 {
     use \Yuptogun\LaravelModel\Traits\HasSortableOrderAttribute;
 
@@ -68,7 +68,7 @@ if ((new Episode)->sortBySortableOrder($episode_sort)) {
 ### Recursive models
 
 ```php
-class Curriculum extends \Illuminate\Datablase\Eloquent\Model, \Yuptogun\LaravelModel\Interfaces\RecursiveModel
+class Curriculum extends \Illuminate\Database\Eloquent\Model, \Yuptogun\LaravelModel\Interfaces\RecursiveModel
 {
     use \Yuptogun\LaravelModel\Traits\IsRecursiveModel;
 
