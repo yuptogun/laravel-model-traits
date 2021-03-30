@@ -1,0 +1,18 @@
+{
+    "name": "yuptogun/laravel-model-traits",
+    "description": "utility traits and interfaces that have helped myself",
+    "require": {
+        "illuminate/database": "^8.34"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yuptogun\\LaravelModel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eojin Kim",
+            "email": "eojin1211@hanmail.net"
+        }
+    ]
+}
